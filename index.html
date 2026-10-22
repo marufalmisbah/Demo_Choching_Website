@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<!-- ============ 1. HEAD ============ -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shikkhanir Academic Care (SNAC) | শিক্ষানীড় একাডেমিক কেয়ার | Jashore</title>
+<meta name="description" content="শিক্ষানীড় একাডেমিক কেয়ার (SNAC), যশোর — ৫ম থেকে ১০ম শ্রেণির শিক্ষার্থীদের জন্য মানসম্মত একাডেমিক সহায়তা ও নিয়মিত গাইডলাইন। Academic coaching for Class 5 to 10 in Jashore.">
+<meta name="keywords" content="Shikkhanir Academic Care, SNAC Jashore, শিক্ষানীড় একাডেমিক কেয়ার, Jashore Coaching Center, যশোর কোচিং, Class 5 Coaching, Class 6 Coaching, Class 7 Coaching, Class 8 Coaching, Class 9 Coaching, Class 10 Coaching">
+<meta name="theme-color" content="#0b2a5b">
+<link rel="canonical" href="https://example.com/"><!-- TODO: replace with real website URL -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="শিক্ষানীড় একাডেমিক কেয়ার (SNAC) | Jashore">
+<meta property="og:description" content="৫ম থেকে ১০ম শ্রেণির শিক্ষার্থীদের জন্য একাডেমিক কেয়ার ও কোচিং — যশোর।">
+<meta property="og:locale" content="bn_BD">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "শিক্ষানীড় একাডেমিক কেয়ার (Shikkhanir Academic Care - SNAC)",
+  "alternateName": "SNAC",
+  "description": "Academic coaching and support for students of Class 5 to Class 10 in Jashore, Bangladesh.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Ghop, Beltola, Bowbazar Road",
+    "addressLocality": "Jashore",
+    "postalCode": "7400",
+    "addressCountry": "BD"
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<!-- Tailwind: preflight disabled so it never overrides Bootstrap's base styles; used only for a few utilities -->
+<script>window.tailwind = { config: { corePlugins: { preflight: false } } };</script>
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+
+<style>
+/* ============ 2. CSS VARIABLES ============ */
+:root{
+  --primary:#0b2a5b;      /* academic navy */
+  --secondary:#2848b8;    /* royal blue */
+  --accent:#f2b705;       /* warm gold */
+  --accent-dark:#b98600;
+  --dark:#0a1630;
+  --light:#f3f6fc;
+  --muted:#586380;
+  --line:#dde4f3;
+  --radius:14px;
+  --font-bn:'Hind Siliguri','Noto Sans Bengali',sans-serif;
+  --font-en:'Poppins',sans-serif;
+}
+
+/* ============ 3. GLOBAL CSS ============ */
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:var(--font-bn);color:var(--dark);background:#fff;font-size:1.05rem;line-height:1.75;overflow-x:hidden}
+.en{font-family:var(--font-en)}
+h1,h2,h3,h4,h5{font-family:var(--font-bn);font-weight:700;line-height:1.35;color:var(--primary)}
+img,svg{max-width:100%}
+a{text-decoration:none}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+section{padding:84px 0;position:relative}
+.bg-soft{background:var(--light)}
+.sec-head{max-width:680px;margin:0 auto 48px;text-align:center}
+.sec-head h2{font-size:clamp(1.65rem,4.2vw,2.35rem);margin-bottom:12px}
+.sec-head p{color:var(--muted);margin:0}
+.sec-head .rule{display:block;width:56px;height:4px;border-radius:4px;background:var(--accent);margin:16px auto 0}
+.text-muted2{color:var(--muted)}
+
+/* ============ 4. COMPONENTS CSS ============ */
+.btn-snac,.btn-ghost,.btn-gold{font-weight:600;padding:.8rem 1.6rem;border-radius:10px;border:2px solid transparent;transition:transform .2s,box-shadow .2s,background .2s,color .2s;min-height:48px;display:inline-flex;align-items:center;justify-content:center;gap:.5rem;cursor:pointer;font-family:var(--font-bn)}
+.btn-snac{background:var(--primary);color:#fff}
+.btn-snac:hover{background:var(--secondary);color:#fff;transform:translateY(-2px);box-shadow:0 10px 22px rgba(11,42,91,.25)}
+.btn-gold{background:var(--accent);color:var(--dark)}
+.btn-gold:hover{background:#ffc928;color:var(--dark);transform:translateY(-2px);box-shadow:0 10px 22px rgba(242,183,5,.35)}
+.btn-ghost{background:transparent;color:var(--primary);border-color:var(--primary)}
+.btn-ghost:hover{background:var(--primary);color:#fff}
+.on-dark .btn-ghost,.btn-ghost.light{color:#fff;border-color:rgba(255,255,255,.6)}
+.on-dark .btn-ghost:hover,.btn-ghost.light:hover{background:#fff;color:var(--primary)}
+.card-s{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;height:100%;transition:transform .25s,box-shadow .25s,border-color .25s}
+.card-s:hover{transform:translateY(-5px);box-shadow:0 16px 34px rgba(11,42,91,.12);border-color:#b9c8ec}
+.ico{width:54px;height:54px;border-radius:14px;display:grid;place-items:center;font-size:1.5rem;background:#e7edfb;color:var(--secondary);margin-bottom:16px}
+.card-s h3{font-size:1.15rem;margin-bottom:8px}
+.card-s p{color:var(--muted);margin:0;font-size:.98rem}
+
+/* Scroll reveal */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.reveal.show{opacity:1;transform:none}
+
+/* ============ 5. ANNOUNCEMENT BAR ============ */
+.topbar{background:var(--dark);color:#fff;font-size:.9rem;padding:8px 0;text-align:center;line-height:1.5}
+.topbar a{color:var(--accent);font-weight:600;white-space:nowrap;margin-left:6px}
+.topbar a:hover{text-decoration:underline}
+
+/* ============ 6. NAVBAR ============ */
+.navbar-snac{position:sticky;top:0;z-index:1030;background:rgba(255,255,255,.0);transition:background .3s,box-shadow .3s,padding .3s;padding:14px 0;background:#fff}
+.navbar-snac.scrolled{background:rgba(255,255,255,.97);box-shadow:0 4px 20px rgba(11,42,91,.1);padding:8px 0;backdrop-filter:blur(8px)}
+.brand{display:flex;align-items:center;gap:12px;color:var(--primary)}
+.brand-logo{width:46px;height:46px;border-radius:12px;background:var(--primary);color:var(--accent);display:grid;place-items:center;font-family:var(--font-en);font-weight:700;font-size:.95rem;letter-spacing:.5px;position:relative;flex:none}
+.brand-logo::after{content:"";position:absolute;left:8px;right:8px;bottom:7px;height:3px;border-radius:3px;background:var(--accent)}
+.brand-text strong{display:block;font-size:1.02rem;line-height:1.2;color:var(--primary)}
+.brand-text small{display:block;font-family:var(--font-en);font-size:.68rem;color:var(--muted);letter-spacing:.3px}
+.nav-link{font-weight:500;color:var(--dark)!important;position:relative;padding:.5rem .85rem!important}
+.nav-link::after{content:"";position:absolute;left:.85rem;right:.85rem;bottom:2px;height:2px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .25s}
+.nav-link:hover::after,.nav-link.active::after{transform:scaleX(1)}
+.nav-link.active{color:var(--secondary)!important}
+.navbar-toggler{border:2px solid var(--primary);padding:.35rem .6rem}
+
+/* ============ 7. HERO ============ */
+.hero{padding:72px 0 96px;background:linear-gradient(160deg,var(--primary) 0%,#12388a 70%,#1c46a8 100%);color:#fff;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,transparent 0 39px,rgba(255,255,255,.06) 39px 40px);pointer-events:none}
+.hero h1{color:#fff;font-size:clamp(1.95rem,5.4vw,3.2rem);margin:18px 0}
+.hero p.lead{color:#d6e0f7;font-size:clamp(1rem,2.4vw,1.15rem);max-width:560px}
+.offer-pill{display:inline-flex;align-items:center;gap:10px;background:rgba(242,183,5,.15);border:1px solid rgba(242,183,5,.6);color:#ffe08a;padding:7px 16px;border-radius:50px;font-size:.92rem;font-weight:500}
+.offer-pill b{color:var(--accent);font-family:var(--font-en)}
+.hero-visual{position:relative;min-height:380px;max-width:440px;margin:0 auto}
+.notebook{position:absolute;inset:20px 10px 20px 10px;background:#fff;border-radius:18px;box-shadow:0 30px 60px rgba(0,0,0,.35);padding:30px 26px 26px 54px;color:var(--dark);background-image:repeating-linear-gradient(transparent 0 33px,#dbe4f6 33px 34px);transform:rotate(2deg)}
+.notebook::before{content:"";position:absolute;left:38px;top:0;bottom:0;width:2px;background:#f4a3a3}
+.notebook .hl{font-weight:700;color:var(--primary);font-size:1.35rem;line-height:34px;margin:0}
+.notebook .ln{font-size:.98rem;line-height:34px;color:var(--muted);margin:0}
+.notebook .ln i{color:var(--secondary);margin-right:6px}
+.sym{position:absolute;display:grid;place-items:center;border-radius:14px;font-weight:700;color:var(--primary);background:var(--accent);box-shadow:0 12px 26px rgba(0,0,0,.3);font-family:var(--font-en)}
+.sym.s1{width:64px;height:64px;top:-6px;left:-6px;font-size:1.7rem;animation:float 6s ease-in-out infinite}
+.sym.s2{width:58px;height:58px;bottom:6px;right:-4px;background:#fff;font-size:1.5rem;animation:float 7s ease-in-out infinite .8s}
+.sym.s3{width:52px;height:52px;top:46%;left:-22px;background:#2f5bd6;color:#fff;font-size:1.3rem;animation:float 8s ease-in-out infinite .4s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+
+/* ============ 8. ABOUT ============ */
+.stat{background:#fff;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:12px;padding:18px 20px;height:100%}
+.stat strong{display:block;font-size:1.25rem;color:var(--primary);line-height:1.3}
+.stat span{color:var(--muted);font-size:.92rem}
+.about-box{background:var(--primary);color:#fff;border-radius:20px;padding:36px;position:relative;overflow:hidden}
+.about-box h3{color:#fff;font-size:1.3rem}
+.about-box blockquote{margin:12px 0 0;color:#cfdaf5;font-size:1.05rem}
+.about-box .bi-quote{position:absolute;right:16px;top:-8px;font-size:7rem;color:rgba(255,255,255,.07)}
+
+/* ============ 9. PROGRAMS & CLASSES ============ */
+.class-card{text-align:left;position:relative;overflow:hidden}
+.class-no{font-family:var(--font-en);font-weight:700;font-size:2.8rem;color:var(--primary);line-height:1}
+.class-card .tag{position:absolute;top:0;right:0;background:var(--accent);color:var(--dark);font-size:.8rem;font-weight:700;padding:4px 14px;border-bottom-left-radius:12px}
+.class-card ul{list-style:none;padding:0;margin:16px 0 20px}
+.class-card li{padding:5px 0;color:var(--muted);font-size:.97rem;display:flex;gap:8px;align-items:flex-start}
+.class-card li i{color:var(--secondary);margin-top:4px}
+.prog-row{display:flex;gap:18px;align-items:flex-start}
+
+/* ============ 10. SUBJECTS ============ */
+.subject{text-align:center;padding:24px 14px}
+.subject .ico{margin:0 auto 12px;transition:transform .3s,background .3s,color .3s}
+.subject:hover .ico{background:var(--primary);color:var(--accent);transform:scale(1.1) rotate(-4deg)}
+.subject h3{font-size:1.05rem;margin:0}
+.note{font-size:.92rem;color:var(--muted);text-align:center;margin-top:24px}
+
+/* ============ 11. OFFER ============ */
+.offer{background:var(--dark);color:#fff;overflow:hidden}
+.offer::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;right:-160px;top:-180px;background:radial-gradient(circle,rgba(242,183,5,.22),transparent 65%)}
+.offer h2{color:#fff;font-size:clamp(1.7rem,4.5vw,2.5rem)}
+.offer-badge{display:inline-block;background:var(--accent);color:var(--dark);font-weight:700;font-family:var(--font-en);font-size:.78rem;letter-spacing:1px;padding:6px 14px;border-radius:6px}
+.price-card{background:#fff;color:var(--dark);border-radius:22px;padding:34px 28px;text-align:center;position:relative;box-shadow:0 30px 60px rgba(0,0,0,.4);border-top:8px solid var(--accent)}
+.price-card .lbl{color:var(--muted);font-weight:500}
+.price{font-size:clamp(4rem,14vw,6rem);font-weight:700;color:var(--primary);line-height:1.05;font-family:var(--font-bn)}
+.price sup{font-size:.45em;color:var(--accent-dark);top:-.9em;margin-right:2px}
+.price-card ul{list-style:none;padding:0;margin:16px 0 22px;text-align:left;display:inline-block}
+.price-card li{padding:3px 0}.price-card li i{color:#1c9c5a;margin-right:8px}
+.offer ul.pts{list-style:none;padding:0;margin:20px 0 28px}
+.offer ul.pts li{padding:6px 0;color:#cdd8f2}.offer ul.pts i{color:var(--accent);margin-right:10px}
+
+/* ============ 12. TEAM ============ */
+.team-card{text-align:center;padding:0;overflow:hidden}
+.team-top{background:linear-gradient(135deg,var(--primary),var(--secondary));padding:34px 20px 54px;position:relative}
+.team-top .role{display:inline-block;background:rgba(255,255,255,.14);color:#ffe08a;border-radius:50px;padding:3px 16px;font-size:.92rem;font-weight:500}
+/* TO USE A REAL PHOTO: replace the .avatar div with <img class="avatar" src="photo.jpg" alt="Name"> */
+.avatar{width:104px;height:104px;border-radius:50%;margin:-52px auto 0;position:relative;background:#fff;border:5px solid #fff;box-shadow:0 8px 22px rgba(11,42,91,.2);display:grid;place-items:center;font-family:var(--font-en);font-weight:700;font-size:1.9rem;color:var(--primary);object-fit:cover;background-image:linear-gradient(135deg,#e7edfb,#fff4cc)}
+.team-body{padding:18px 22px 28px}
+.team-body h3{font-size:1.2rem;font-family:var(--font-en)}
+.team-body .meta{color:var(--muted);font-size:.95rem;margin:0}
+.team-body .deg{display:inline-block;margin-top:12px;background:#e7edfb;color:var(--primary);border-radius:8px;padding:4px 14px;font-weight:600;font-size:.92rem}
+
+/* ============ 13. ADMISSION STEPS ============ */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;position:relative}
+.steps::before{content:"";position:absolute;top:30px;left:12%;right:12%;height:3px;background:repeating-linear-gradient(90deg,var(--secondary) 0 8px,transparent 8px 16px);opacity:.4}
+.step{text-align:center;position:relative}
+.step .num{width:60px;height:60px;margin:0 auto 14px;border-radius:50%;background:var(--primary);color:var(--accent);display:grid;place-items:center;font-family:var(--font-en);font-weight:700;font-size:1.2rem;border:5px solid var(--light);position:relative}
+.step h3{font-size:1.1rem}.step p{color:var(--muted);font-size:.95rem;margin:0}
+
+/* ============ 14. TRUST ============ */
+.trust{background:var(--primary);color:#fff}
+.trust .sec-head h2,.trust .sec-head p{color:#fff}.trust .sec-head p{color:#cfdaf5}
+.trust-item{border-left:4px solid var(--accent);padding:6px 0 6px 20px;height:100%}
+.trust-item i{font-size:1.6rem;color:var(--accent)}
+.trust-item p{margin:8px 0 0;font-size:1.08rem}
+
+/* ============ 15. TESTIMONIALS ============ */
+.demo-tag{display:inline-block;background:#fff4cc;color:#7a5a00;border:1px dashed var(--accent-dark);font-size:.8rem;padding:2px 10px;border-radius:6px;margin-bottom:12px;font-family:var(--font-en);font-weight:500}
+.quote{color:var(--dark);font-style:italic;margin-bottom:16px}
+.who{display:flex;align-items:center;gap:12px}
+.who .dot{width:42px;height:42px;border-radius:50%;background:#e7edfb;color:var(--secondary);display:grid;place-items:center}
+.who small{color:var(--muted);display:block;line-height:1.3}
+
+/* ============ 16. FAQ ============ */
+.accordion-item{border:1px solid var(--line)!important;border-radius:12px!important;margin-bottom:12px;overflow:hidden}
+.accordion-button{font-family:var(--font-bn);font-weight:600;color:var(--primary);background:#fff;padding:18px 22px;font-size:1.05rem}
+.accordion-button:not(.collapsed){background:#eef3ff;color:var(--primary);box-shadow:none}
+.accordion-body{color:var(--muted);padding:6px 22px 20px;background:#eef3ff}
+
+/* ============ 17. LOCATION ============ */
+.map-card{border-radius:20px;overflow:hidden;border:1px solid var(--line);min-height:340px;height:100%;position:relative;background:#e8eefb;
+  background-image:linear-gradient(rgba(40,72,184,.09) 1px,transparent 1px),linear-gradient(90deg,rgba(40,72,184,.09) 1px,transparent 1px);background-size:38px 38px}
+.map-card .road{position:absolute;background:#fff;box-shadow:0 0 0 2px #d3dcf2}
+.map-card .r1{left:-5%;right:-5%;top:58%;height:22px;transform:rotate(-8deg)}
+.map-card .r2{top:-5%;bottom:-5%;left:34%;width:16px;transform:rotate(12deg)}
+.map-card .r3{left:-5%;right:-5%;top:28%;height:12px;transform:rotate(6deg)}
+.pin{position:absolute;left:50%;top:44%;transform:translate(-50%,-100%);text-align:center}
+.pin i{font-size:3.4rem;color:#d93636;filter:drop-shadow(0 8px 6px rgba(0,0,0,.25));display:block;line-height:1;animation:float 3s ease-in-out infinite}
+.pin span{background:#fff;border-radius:8px;padding:4px 12px;font-weight:600;font-size:.85rem;color:var(--primary);box-shadow:0 4px 12px rgba(0,0,0,.15);white-space:nowrap}
+.map-note{position:absolute;left:14px;bottom:12px;font-size:.78rem;color:var(--muted);background:rgba(255,255,255,.9);padding:2px 10px;border-radius:6px}
+.addr-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px;height:100%}
+.addr-card .ico{background:var(--primary);color:var(--accent)}
+
+/* ============ 18. CONTACT CTA ============ */
+.cta{background:linear-gradient(135deg,var(--primary),#1c46a8);color:#fff;text-align:center;overflow:hidden}
+.cta h2{color:#fff;font-size:clamp(1.55rem,4.2vw,2.3rem);max-width:760px;margin:0 auto 14px}
+.cta p{color:#d6e0f7;max-width:620px;margin:0 auto 28px}
+.cta .channels{margin-top:26px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.chan{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.12);color:#fff;font-size:1.2rem;border:0;transition:background .2s,transform .2s}
+.chan:hover{background:var(--accent);color:var(--dark);transform:translateY(-3px)}
+
+/* ============ 19. FOOTER ============ */
+footer{background:var(--dark);color:#b6c3e3;padding:64px 0 0;font-size:.97rem}
+footer h4{color:#fff;font-size:1.05rem;margin-bottom:16px}
+footer ul{list-style:none;padding:0;margin:0}
+footer li{padding:4px 0}
+footer a{color:#b6c3e3;transition:color .2s,padding .2s}
+footer a:hover{color:var(--accent);padding-left:4px}
+footer .brand-text strong{color:#fff}footer .brand-text small{color:#8da0cc}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:44px;padding:20px 0;text-align:center;font-size:.88rem;font-family:var(--font-en)}
+
+/* Back-to-top & toast */
+#toTop{position:fixed;right:18px;bottom:18px;width:48px;height:48px;border-radius:50%;border:0;background:var(--accent);color:var(--dark);font-size:1.3rem;box-shadow:0 8px 20px rgba(0,0,0,.25);opacity:0;visibility:hidden;transform:translateY(12px);transition:.3s;z-index:1020}
+#toTop.show{opacity:1;visibility:visible;transform:none}
+.toast-wrap{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:2000;width:min(92vw,420px)}
+.snac-toast{background:var(--dark);color:#fff;border-left:5px solid var(--accent);border-radius:10px;padding:14px 18px;margin-top:10px;box-shadow:0 14px 30px rgba(0,0,0,.35);animation:tin .35s ease;font-size:.97rem}
+@keyframes tin{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.modal-header{background:var(--primary);color:#fff;border:0}.modal-header .modal-title{color:#fff}
+.form-label{font-weight:600;color:var(--primary)}
+.form-control,.form-select{padding:.7rem .9rem;border-radius:10px;border-color:#c8d3ee;font-family:var(--font-bn)}
+.demo-note{background:#eef3ff;border-radius:10px;padding:12px 14px;font-size:.9rem;color:var(--muted)}
+
+/* ============ 20. RESPONSIVE CSS ============ */
+@media (max-width:991.98px){
+  section{padding:64px 0}
+  .navbar-collapse{background:#fff;border-top:1px solid var(--line);margin-top:10px;padding:10px 0 16px}
+  .nav-link::after{left:0;right:auto;width:36px}
+  .steps{grid-template-columns:repeat(2,1fr);gap:28px 16px}.steps::before{display:none}
+  .hero{padding:48px 0 70px}.hero-visual{margin-top:40px;min-height:340px}
+}
+@media (max-width:575.98px){
+  section{padding:52px 0}
+  .brand-text strong{font-size:.9rem}.brand-text small{display:none}
+  .brand-logo{width:42px;height:42px}
+  .topbar{font-size:.82rem;padding:7px 4px}
+  .btn-snac,.btn-gold,.btn-ghost{width:100%}
+  .about-box,.addr-card,.card-s{padding:22px}
+  .steps{grid-template-columns:1fr}
+  .hero-visual{min-height:310px}.notebook{padding-left:46px}
+  .notebook .hl{font-size:1.15rem}.notebook .ln{font-size:.9rem}
+  .sym.s3{left:-8px}.sym.s2{right:0}
+  .price-card{padding:28px 18px}
+}
+@media (max-width:359px){.brand-text strong{font-size:.8rem}.hero h1{font-size:1.7rem}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+
+<body>
+<a class="visually-hidden-focusable position-absolute p-2 bg-white" href="#main">Skip to content</a>
+
+<!-- ============ TOP ANNOUNCEMENT BAR ============ -->
+<div class="topbar" role="region" aria-label="Announcement">
+  <div class="container">🎓 SNAC January Special — পুরো জানুয়ারি মাসের কোর্স মাত্র <b class="en">৳99</b> <a href="#offer">ভর্তি চলছে →</a></div>
+</div>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar navbar-expand-lg navbar-snac" id="nav" aria-label="Main navigation">
+  <div class="container">
+    <a class="brand navbar-brand m-0" href="#home" aria-label="SNAC home">
+      <span class="brand-logo">SNAC</span>
+      <span class="brand-text"><strong>শিক্ষানীড় একাডেমিক কেয়ার</strong><small>Shikkhanir Academic Care</small></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="মেনু খুলুন">
+      <i class="bi bi-list fs-4"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#programs">Programs</a></li>
+        <li class="nav-item"><a class="nav-link" href="#classes">Classes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="#admission">Admission</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0"><button class="btn-gold w-100 py-2" data-admit>ভর্তি করুন</button></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero on-dark" id="home">
+  <div class="container position-relative">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-7">
+        <span class="offer-pill"><i class="bi bi-stars"></i> জানুয়ারি স্পেশাল: পুরো মাস মাত্র <b>৳99</b></span>
+        <h1>শিক্ষার শক্ত ভিত্তি, সাফল্যের সুন্দর পথ</h1>
+        <p class="lead">শিক্ষানীড় একাডেমিক কেয়ার — ৫ম থেকে ১০ম শ্রেণির শিক্ষার্থীদের জন্য মানসম্মত একাডেমিক সহায়তা ও নিয়মিত গাইডলাইন।</p>
+        <p class="en small mb-4" style="color:#9fb3e6">SNAC · Building Strong Foundations for Academic Success</p>
+        <div class="d-flex flex-column flex-sm-row gap-3">
+          <button class="btn-gold" data-admit><i class="bi bi-mortarboard-fill"></i> এখনই ভর্তি করুন</button>
+          <a class="btn-ghost light" href="#about">আমাদের সম্পর্কে জানুন</a>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="hero-visual" aria-hidden="true">
+          <div class="notebook">
+            <p class="hl">শিক্ষায় ভিত্তি,<br>সাফল্যে অঙ্গীকার</p>
+            <p class="ln"><i class="bi bi-check2-circle"></i>ক্লাস ৫ থেকে ১০</p>
+            <p class="ln"><i class="bi bi-check2-circle"></i>নিয়মিত অনুশীলন</p>
+            <p class="ln"><i class="bi bi-check2-circle"></i>পরীক্ষামুখী প্রস্তুতি</p>
+            <p class="ln"><i class="bi bi-check2-circle"></i>অভিভাবকের সঙ্গে যোগাযোগ</p>
+          </div>
+          <div class="sym s1">π</div><div class="sym s2"><i class="bi bi-mortarboard-fill"></i></div><div class="sym s3">H₂O</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6 reveal">
+        <div class="about-box">
+          <i class="bi bi-quote"></i>
+          <h3>শিক্ষানীড় একাডেমিক কেয়ার (SNAC)</h3>
+          <blockquote>"শিক্ষায় ভিত্তি, সাফল্যে অঙ্গীকার" — যশোরের শিক্ষার্থীদের জন্য একটি যত্নশীল একাডেমিক পরিবেশ।</blockquote>
+        </div>
+      </div>
+      <div class="col-lg-6 reveal">
+        <h2 class="mb-3" style="font-size:clamp(1.6rem,4vw,2.2rem)">আমাদের সম্পর্কে</h2>
+        <p class="text-muted2">শিক্ষানীড় একাডেমিক কেয়ার (SNAC) যশোরের শিক্ষার্থীদের জন্য একটি একাডেমিক কেয়ার ও কোচিং প্ল্যাটফর্ম। ৫ম থেকে ১০ম শ্রেণির শিক্ষার্থীদের একাডেমিক ভিত্তি শক্ত করা, নিয়মিত পড়াশোনার অভ্যাস তৈরি করা এবং পরীক্ষাভিত্তিক প্রস্তুতিতে সহায়তা করাই এর মূল লক্ষ্য।</p>
+        <div class="row g-3 mt-2" id="aboutStats"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE SNAC ============ -->
+<section class="bg-soft" id="why">
+  <div class="container">
+    <div class="sec-head reveal"><h2>কেন শিক্ষানীড় একাডেমিক কেয়ার?</h2><p>শিক্ষার্থীর প্রতিটি ধাপে পাশে থাকার জন্য আমাদের ছয়টি অঙ্গীকার।</p><span class="rule"></span></div>
+    <div class="row g-4" id="whyGrid"></div>
+  </div>
+</section>
+
+<!-- ============ ACADEMIC PROGRAMS ============ -->
+<section id="programs">
+  <div class="container">
+    <div class="sec-head reveal"><h2>একাডেমিক প্রোগ্রাম</h2><p>প্রতিটি শ্রেণিতে একই কাঠামোর তিনটি সহায়তা, যাতে শেখা হয় ধাপে ধাপে।</p><span class="rule"></span></div>
+    <div class="row g-4">
+      <div class="col-md-4 reveal"><div class="card-s"><div class="ico"><i class="bi bi-journal-bookmark-fill"></i></div><h3>Academic Support</h3><p>পাঠ্যবইয়ের বিষয়ভিত্তিক ব্যাখ্যা ও গাইডলাইন, যাতে ভিত্তি শক্ত হয়।</p></div></div>
+      <div class="col-md-4 reveal"><div class="card-s"><div class="ico"><i class="bi bi-pencil-square"></i></div><h3>Regular Practice</h3><p>নিয়মিত অনুশীলনের মাধ্যমে পড়াশোনার অভ্যাস গড়ে তোলা।</p></div></div>
+      <div class="col-md-4 reveal"><div class="card-s"><div class="ico"><i class="bi bi-bullseye"></i></div><h3>Exam Preparation</h3><p>পরীক্ষার ধরন বুঝে পরিকল্পিত প্রস্তুতিতে সহায়তা।</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLASSES 5–10 ============ -->
+<section class="bg-soft" id="classes">
+  <div class="container">
+    <div class="sec-head reveal"><h2>৫ম থেকে ১০ম শ্রেণি</h2><p>আপনার সন্তানের শ্রেণি বেছে নিন। ভর্তি সম্পর্কে জানতে যোগাযোগ করুন।</p><span class="rule"></span></div>
+    <div class="row g-4" id="classGrid"></div>
+  </div>
+</section>
+
+<!-- ============ SUBJECTS ============ -->
+<section id="subjects">
+  <div class="container">
+    <div class="sec-head reveal"><h2>বিষয়সমূহ</h2><p>শ্রেণি অনুযায়ী প্রয়োজনীয় বিষয়ে একাডেমিক সহায়তার ক্ষেত্র।</p><span class="rule"></span></div>
+    <div class="row g-3 g-md-4" id="subjectGrid"></div>
+    <p class="note">* বিষয়ভিত্তিক সহায়তার বিস্তারিত জানতে ভর্তির আগে সরাসরি যোগাযোগ করুন।</p>
+  </div>
+</section>
+
+<!-- ============ JANUARY OFFER ============ -->
+<section class="offer on-dark" id="offer">
+  <div class="container position-relative">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-7 reveal">
+        <span class="offer-badge">JANUARY SPECIAL · LIMITED TIME OFFER</span>
+        <h2 class="mt-3">জানুয়ারি স্পেশাল অফার</h2>
+        <p style="color:#cdd8f2;font-size:1.1rem">শিক্ষানীড় একাডেমিক কেয়ারের সঙ্গে নতুন বছরের পড়াশোনা শুরু করুন সামান্য খরচে।</p>
+        <ul class="pts">
+          <li><i class="bi bi-check-circle-fill"></i>৫ম থেকে ১০ম শ্রেণির শিক্ষার্থীদের জন্য</li>
+          <li><i class="bi bi-check-circle-fill"></i>পুরো জানুয়ারি মাসের কোর্স</li>
+          <li><i class="bi bi-check-circle-fill"></i>অফারের বিস্তারিত শর্ত জানতে যোগাযোগ করুন</li>
+        </ul>
+        <button class="btn-gold" data-admit>এখনই ভর্তি করুন</button>
+      </div>
+      <div class="col-lg-5 reveal">
+        <div class="price-card">
+          <div class="offer-badge mb-3">Limited Time Academic Offer</div>
+          <div class="lbl">পুরো জানুয়ারি মাসের কোর্স</div>
+          <div class="price"><sup>৳</sup>৯৯</div>
+          <div class="en small text-muted2 mb-2">January Full Month Course — Only ৳99</div>
+          <button class="btn-snac w-100" data-admit>Join Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MANAGEMENT TEAM ============ -->
+<section id="team">
+  <div class="container">
+    <div class="sec-head reveal"><h2>আমাদের ব্যবস্থাপনা</h2><p>যশোরের সরকারি প্রতিষ্ঠানের শিক্ষার্থীদের হাতে গড়া একটি উদ্যোগ।</p><span class="rule"></span></div>
+    <div class="row g-4 justify-content-center" id="teamGrid"></div>
+  </div>
+</section>
+
+<!-- ============ ACADEMIC FEATURES ============ -->
+<section class="bg-soft" id="features">
+  <div class="container">
+    <div class="sec-head reveal"><h2>যেভাবে আমরা শিক্ষার্থীর পাশে থাকি</h2><p>শেখার প্রতিটি ধাপে সুসংগঠিত সহায়তা।</p><span class="rule"></span></div>
+    <div class="row g-4" id="featGrid"></div>
+  </div>
+</section>
+
+<!-- ============ ADMISSION PROCESS ============ -->
+<section id="admission">
+  <div class="container">
+    <div class="sec-head reveal"><h2>ভর্তি প্রক্রিয়া</h2><p>চারটি সহজ ধাপে শুরু করুন।</p><span class="rule"></span></div>
+    <div class="steps reveal">
+      <div class="step"><div class="num">01</div><h3>যোগাযোগ করুন</h3><p>ভর্তি বিষয়ে জানতে আমাদের সঙ্গে কথা বলুন।</p></div>
+      <div class="step"><div class="num">02</div><h3>ক্লাস নির্বাচন করুন</h3><p>৫ম থেকে ১০ম শ্রেণির মধ্যে সঠিক শ্রেণি বেছে নিন।</p></div>
+      <div class="step"><div class="num">03</div><h3>ভর্তি সম্পন্ন করুন</h3><p>প্রয়োজনীয় তথ্য দিয়ে ভর্তি সম্পন্ন করুন।</p></div>
+      <div class="step"><div class="num">04</div><h3>নিয়মিত ক্লাস শুরু করুন</h3><p>নির্ধারিত নিয়মে পড়াশোনা শুরু করুন।</p></div>
+    </div>
+    <div class="text-center mt-5"><button class="btn-snac" data-admit><i class="bi bi-pencil-square"></i> ভর্তির ফর্ম পূরণ করুন</button></div>
+  </div>
+</section>
+
+<!-- ============ TRUST ============ -->
+<section class="trust" id="trust">
+  <div class="container">
+    <div class="sec-head reveal"><h2>আমাদের লক্ষ্য</h2><p>সংখ্যার চেয়ে শিক্ষার্থীর শেখাকে আমরা গুরুত্ব দিই।</p></div>
+    <div class="row g-4">
+      <div class="col-md-4 reveal"><div class="trust-item"><i class="bi bi-bricks"></i><p>শিক্ষার্থীর একাডেমিক ভিত্তি শক্ত করাই আমাদের লক্ষ্য।</p></div></div>
+      <div class="col-md-4 reveal"><div class="trust-item"><i class="bi bi-arrow-repeat"></i><p>নিয়মিত অনুশীলন ও গাইডলাইনের মাধ্যমে শেখার পরিবেশ তৈরি করা।</p></div></div>
+      <div class="col-md-4 reveal"><div class="trust-item"><i class="bi bi-chat-heart"></i><p>শিক্ষার্থী ও অভিভাবকের সঙ্গে কার্যকর যোগাযোগ বজায় রাখা।</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<!-- ADMIN NOTE: edit the `testimonials` array in the script at the bottom to add real reviews. Set demo:false to remove the demo tag. -->
+<section id="testimonials">
+  <div class="container">
+    <div class="sec-head reveal"><h2>Student Feedback</h2><p>শিক্ষার্থী ও অভিভাবকদের মতামত।</p><span class="rule"></span></div>
+    <div class="row g-4" id="testiGrid"></div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="bg-soft" id="faq">
+  <div class="container">
+    <div class="sec-head reveal"><h2>সাধারণ জিজ্ঞাসা</h2><p>ভর্তি ও একাডেমিক বিষয়ে প্রচলিত প্রশ্নের উত্তর।</p><span class="rule"></span></div>
+    <div class="row justify-content-center"><div class="col-lg-9"><div class="accordion" id="faqList"></div></div></div>
+  </div>
+</section>
+
+<!-- ============ LOCATION ============ -->
+<section id="location">
+  <div class="container">
+    <div class="sec-head reveal"><h2>আমাদের অবস্থান</h2><p>যশোর শহরে আমাদের ক্যাম্পাসে আপনাকে স্বাগতম।</p><span class="rule"></span></div>
+    <div class="row g-4">
+      <div class="col-lg-5 reveal">
+        <div class="addr-card">
+          <div class="ico"><i class="bi bi-geo-alt-fill"></i></div>
+          <h3>📍 ঘোপ, বেলতলা, বৌবাজার রোড</h3>
+          <p class="text-muted2 mb-1">ঘোপ, বেলতলা, বৌবাজার রোড,<br>যশোর-৭৪০০, বাংলাদেশ</p>
+          <p class="en small text-muted2">Ghop, Beltola, Bowbazar Road, Jashore-7400, Bangladesh</p>
+          <div class="d-grid gap-2 mt-4">
+            <button class="btn-snac" id="dirBtn"><i class="bi bi-sign-turn-right-fill"></i> Get Directions</button>
+            <button class="btn-ghost" data-contact="phone"><i class="bi bi-telephone-fill"></i> যোগাযোগ করুন</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7 reveal">
+        <!-- MAP PLACEHOLDER: set MAP_URL in the script to link the real Google Maps location -->
+        <div class="map-card" role="img" aria-label="Map placeholder for SNAC location in Jashore">
+          <div class="road r1"></div><div class="road r2"></div><div class="road r3"></div>
+          <div class="pin"><i class="bi bi-geo-alt-fill"></i><span>শিক্ষানীড় একাডেমিক কেয়ার</span></div>
+          <div class="map-note">Map preview · বৌবাজার রোড, যশোর</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT / ADMISSION CTA ============ -->
+<section class="cta on-dark" id="contact">
+  <div class="container">
+    <h2>আপনার সন্তানের একাডেমিক যাত্রা হোক আরও সুন্দর ও সুশৃঙ্খল।</h2>
+    <p>৫ম থেকে ১০ম শ্রেণির শিক্ষার্থীদের জন্য SNAC-এর সঙ্গে শুরু করুন নতুন একাডেমিক প্রস্তুতি।</p>
+    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+      <button class="btn-gold" data-admit>এখনই ভর্তি করুন</button>
+      <button class="btn-ghost light" data-contact="phone">যোগাযোগ করুন</button>
+    </div>
+    <div class="channels" aria-label="Contact channels">
+      <button class="chan" data-contact="phone" aria-label="Phone"><i class="bi bi-telephone-fill"></i></button>
+      <button class="chan" data-contact="whatsapp" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></button>
+      <button class="chan" data-contact="messenger" aria-label="Messenger"><i class="bi bi-messenger"></i></button>
+      <button class="chan" data-contact="facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></button>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <a class="brand mb-3" href="#home"><span class="brand-logo">SNAC</span><span class="brand-text"><strong>শিক্ষানীড় একাডেমিক কেয়ার</strong><small>Shikkhanir Academic Care</small></span></a>
+        <p>শিক্ষায় ভিত্তি, সাফল্যে অঙ্গীকার। ৫ম থেকে ১০ম শ্রেণির জন্য একাডেমিক কেয়ার।</p>
+      </div>
+      <div class="col-lg-2 col-6"><h4>Quick Links</h4><ul>
+        <li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#programs">Programs</a></li><li><a href="#team">Team</a></li><li><a href="#admission">Admission</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+      <div class="col-lg-3 col-6"><h4>Academic</h4><ul>
+        <li><a href="#classes">Class 5</a></li><li><a href="#classes">Class 6</a></li><li><a href="#classes">Class 7</a></li><li><a href="#classes">Class 8</a></li><li><a href="#classes">Class 9</a></li><li><a href="#classes">Class 10</a></li></ul></div>
+      <div class="col-lg-3 col-md-6"><h4>Contact</h4>
+        <p><i class="bi bi-geo-alt-fill text-warning me-2"></i>ঘোপ, বেলতলা, বৌবাজার রোড<br><span class="ms-4">যশোর-৭৪০০</span></p></div>
+    </div>
+    <div class="foot-bottom">© <span id="year">2026</span> Shikkhanir Academic Care (SNAC). All Rights Reserved.</div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+<div class="toast-wrap" id="toasts" aria-live="polite"></div>
+
+<!-- ============ ADMISSION MODAL ============ -->
+<div class="modal fade" id="admitModal" tabindex="-1" aria-labelledby="admitTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content" style="border-radius:18px;overflow:hidden">
+      <div class="modal-header"><h2 class="modal-title fs-5" id="admitTitle">ভর্তির আবেদন — SNAC</h2><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button></div>
+      <form id="admitForm" novalidate>
+        <div class="modal-body">
+          <div class="row g-3">
+            <div class="col-12"><label class="form-label" for="fName">Student Name / শিক্ষার্থীর নাম</label><input class="form-control" id="fName" required minlength="3" autocomplete="name"><div class="invalid-feedback">শিক্ষার্থীর নাম লিখুন (কমপক্ষে ৩ অক্ষর)।</div></div>
+            <div class="col-sm-6"><label class="form-label" for="fClass">Class / শ্রেণি</label><select class="form-select" id="fClass" required><option value="">নির্বাচন করুন</option><option>৫ম শ্রেণি</option><option>৬ষ্ঠ শ্রেণি</option><option>৭ম শ্রেণি</option><option>৮ম শ্রেণি</option><option>৯ম শ্রেণি</option><option>১০ম শ্রেণি</option></select><div class="invalid-feedback">শ্রেণি নির্বাচন করুন।</div></div>
+            <div class="col-sm-6"><label class="form-label" for="fSub">Preferred Subject / পছন্দের বিষয়</label><select class="form-select" id="fSub" required><option value="">নির্বাচন করুন</option><option>বাংলা</option><option>ইংরেজি</option><option>গণিত</option><option>বিজ্ঞান</option><option>পদার্থবিজ্ঞান</option><option>রসায়ন</option><option>জীববিজ্ঞান</option><option>ICT</option><option>একাধিক / অন্যান্য</option></select><div class="invalid-feedback">একটি বিষয় নির্বাচন করুন।</div></div>
+            <div class="col-sm-6"><label class="form-label" for="fGuard">Guardian Name / অভিভাবকের নাম</label><input class="form-control" id="fGuard" required minlength="3"><div class="invalid-feedback">অভিভাবকের নাম লিখুন।</div></div>
+            <div class="col-sm-6"><label class="form-label" for="fPhone">Mobile Number / মোবাইল</label><input class="form-control" id="fPhone" type="tel" inputmode="numeric" placeholder="01XXXXXXXXX" required><div class="invalid-feedback">সঠিক ১১ সংখ্যার মোবাইল নম্বর দিন (01XXXXXXXXX)।</div></div>
+            <div class="col-12"><label class="form-label" for="fMsg">Message / বার্তা (ঐচ্ছিক)</label><textarea class="form-control" id="fMsg" rows="3"></textarea></div>
+          </div>
+        </div>
+        <div class="modal-footer flex-column align-items-stretch border-0">
+          <button class="btn-snac" type="submit">Submit Admission Request</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- ============ SUCCESS MODAL ============ -->
+<div class="modal fade" id="okModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered"><div class="modal-content text-center p-4" style="border-radius:18px">
+    <div class="ico mx-auto" style="background:#dff5e8;color:#1c9c5a"><i class="bi bi-check-lg"></i></div>
+    <h2 class="fs-4">আবেদন গ্রহণ করা হয়েছে</h2>
+    <p class="text-muted2">ধন্যবাদ! SNAC-এর পক্ষ থেকে শীঘ্রই আপনার সঙ্গে যোগাযোগ করা হবে।</p>
+    <!-- Demo notice: remove this paragraph once a real backend (WhatsApp, Google Sheets, PHP, Laravel, Firebase...) is connected -->
+    <p class="demo-note">এটি একটি ডেমো ফর্ম। বর্তমানে তথ্য কোথাও পাঠানো হয় না; পরে ব্যাকএন্ডের সঙ্গে যুক্ত করা যাবে। অনুগ্রহ করে সরাসরি যোগাযোগ করে ভর্তি নিশ্চিত করুন।</p>
+    <button class="btn-snac mt-2" data-bs-dismiss="modal">ঠিক আছে</button>
+  </div></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+/* ============ 20. JAVASCRIPT ============ */
+
+/* ---- Contact configuration: fill these in later (leave empty until real data exists) ---- */
+const CONTACT_PHONE = "";     // e.g. "8801XXXXXXXXX" (country code, no +)
+const WHATSAPP_NUMBER = "";   // e.g. "8801XXXXXXXXX"
+const MESSENGER_URL = "";     // e.g. "https://m.me/yourpage"
+const FACEBOOK_URL = "";      // e.g. "https://facebook.com/yourpage"
+const MAP_URL = "";           // real Google Maps link for Get Directions
+
+/* ---- Content data (edit here) ---- */
+const aboutStats = [
+  ["bi-mortarboard","৫ম–১০ম শ্রেণি","শ্রেণিভিত্তিক সহায়তা"],
+  ["bi-journal-check","Academic Support","বিষয়ভিত্তিক গাইডলাইন"],
+  ["bi-people","Dedicated Management","নিবেদিত পরিচালনা"],
+  ["bi-heart","Student Focused","শিক্ষার্থীকেন্দ্রিক"]
+];
+const why = [
+  ["bi-award","মানসম্মত একাডেমিক গাইডলাইন","পাঠ্যক্রম অনুযায়ী পরিষ্কার ও গোছানো দিকনির্দেশনা।"],
+  ["bi-calendar-check","নিয়মিত পড়াশোনার পরিবেশ","প্রতিদিনের পড়ার অভ্যাস গড়তে সহায়ক শৃঙ্খলা।"],
+  ["bi-layers","শ্রেণিভিত্তিক প্রস্তুতি","প্রতিটি শ্রেণির প্রয়োজন বুঝে আলাদা মনোযোগ।"],
+  ["bi-clipboard-check","পরীক্ষামুখী প্রস্তুতি","পরীক্ষার জন্য পরিকল্পিত অনুশীলন ও পর্যালোচনা।"],
+  ["bi-emoji-smile","শিক্ষার্থীবান্ধব পরিবেশ","প্রশ্ন করতে স্বাচ্ছন্দ্য বোধ করার মতো বন্ধুত্বপূর্ণ পরিবেশ।"],
+  ["bi-chat-dots","অভিভাবক-শিক্ষার্থী যোগাযোগ","শিক্ষার্থীর অগ্রগতি নিয়ে খোলামেলা যোগাযোগ।"]
+];
+const classes = ["৫ম","৬ষ্ঠ","৭ম","৮ম","৯ম","১০ম"];
+const subjects = [
+  ["bi-book","বাংলা"],["bi-translate","ইংরেজি"],["bi-calculator","গণিত"],["bi-globe-asia-australia","বিজ্ঞান"],
+  ["bi-lightning-charge","পদার্থবিজ্ঞান"],["bi-droplet-half","রসায়ন"],["bi-bug","জীববিজ্ঞান"],["bi-pc-display","ICT"]
+];
+const team = [
+  ["AM","Abdullah Al Mamun","প্রতিষ্ঠাতা ও পরিচালক","Dept. of Civil","Govt. Polytechnic Institute, Jashore","BSc in Civil"],
+  ["NK","Nishad Khondkar Ove","সহ পরিচালক","Department of Geography","Govt. City College, Jashore","BA Running"],
+  ["AR","Al Rafin Siddiqui","ব্যবস্থাপনা পরিচালক","Department of Zoology","Govt. MM College, Jashore","BSc Running"]
+];
+const feats = [
+  ["📚","Structured Learning","ধাপে ধাপে সাজানো শেখার কাঠামো।"],
+  ["📝","Regular Practice","নিয়মিত অনুশীলনে দক্ষতা বৃদ্ধি।"],
+  ["🎯","Exam Preparation","পরীক্ষার জন্য লক্ষ্যভিত্তিক প্রস্তুতি।"],
+  ["💡","Concept Building","মুখস্থ নয়, ধারণা বুঝে শেখার চর্চা।"],
+  ["📊","Academic Progress","শেখার অগ্রগতি নিয়মিত পর্যবেক্ষণ।"],
+  ["🤝","Student Support","প্রয়োজনে পাশে থাকার সহায়তা।"]
+];
+/* Replace these demo entries with real reviews, then set demo:false */
+const testimonials = [
+  {demo:true,text:"এখানে একজন শিক্ষার্থীর বাস্তব মতামত বসবে।",name:"Student Name",role:"Class — "},
+  {demo:true,text:"এখানে একজন অভিভাবকের বাস্তব মতামত বসবে।",name:"Guardian Name",role:"Parent"},
+  {demo:true,text:"এখানে আরেকজন শিক্ষার্থীর বাস্তব মতামত বসবে।",name:"Student Name",role:"Class — "}
+];
+const faqs = [
+  ["SNAC কোন শ্রেণির শিক্ষার্থীদের জন্য?","শিক্ষানীড় একাডেমিক কেয়ার ৫ম থেকে ১০ম শ্রেণির শিক্ষার্থীদের জন্য একাডেমিক সহায়তা দিয়ে থাকে।"],
+  ["কোন কোন বিষয়ে একাডেমিক সহায়তা দেওয়া হয়?","বাংলা, ইংরেজি, গণিত, বিজ্ঞান, পদার্থবিজ্ঞান, রসায়ন, জীববিজ্ঞান ও ICT সহ প্রয়োজনীয় বিষয়ের সহায়তার ক্ষেত্র রয়েছে। শ্রেণিভিত্তিক বিষয়ের বিস্তারিত জানতে সরাসরি যোগাযোগ করুন।"],
+  ["জানুয়ারি মাসের ৳৯৯ অফারটি কী?","এটি একটি বিশেষ অফার, যেখানে মাত্র ৯৯ টাকায় পুরো জানুয়ারি মাসের কোর্সে যুক্ত হওয়া যাবে। শর্তাবলি জানতে যোগাযোগ করুন।"],
+  ["ভর্তি কীভাবে করা যাবে?","ওয়েবসাইটের ভর্তি ফর্ম পূরণ করে অথবা সরাসরি যোগাযোগ করে ভর্তি সম্পর্কে জানা যাবে। ভর্তি প্রক্রিয়ার ধাপগুলো ‘ভর্তি প্রক্রিয়া’ অংশে দেওয়া আছে।"],
+  ["SNAC কোথায় অবস্থিত?","ঘোপ, বেলতলা, বৌবাজার রোড, যশোর-৭৪০০, বাংলাদেশ।"],
+  ["অভিভাবকরা কীভাবে যোগাযোগ করবেন?","পেজের যোগাযোগ বাটন বা ভর্তি ফর্মের মাধ্যমে যোগাযোগ করা যাবে। যোগাযোগের মাধ্যমগুলো শীঘ্রই এই ওয়েবসাইটে যুক্ত করা হবে।"],
+  ["ক্লাস ৫–১০ এর শিক্ষার্থীরা কি ভর্তি হতে পারবে?","হ্যাঁ, ৫ম থেকে ১০ম শ্রেণির যেকোনো শিক্ষার্থী ভর্তির জন্য আবেদন করতে পারবে।"]
+];
+
+/* ---- Render helpers ---- */
+const $ = (s, r=document) => r.querySelector(s);
+const $$ = (s, r=document) => [...r.querySelectorAll(s)];
+
+$("#aboutStats").innerHTML = aboutStats.map(a => `<div class="col-6"><div class="stat"><strong>${a[1]}</strong><span>${a[2]}</span></div></div>`).join("");
+$("#whyGrid").innerHTML = why.map(w => `<div class="col-md-6 col-lg-4 reveal"><div class="card-s"><div class="ico"><i class="bi ${w[0]}"></i></div><h3>${w[1]}</h3><p>${w[2]}</p></div></div>`).join("");
+$("#classGrid").innerHTML = classes.map((c,i) => `<div class="col-sm-6 col-lg-4 reveal"><div class="card-s class-card">${i>=4?'<span class="tag">বোর্ড শ্রেণি</span>':''}<div class="class-no">${c}</div><div class="text-muted2">শ্রেণি · Class ${i+5}</div>
+  <ul><li><i class="bi bi-check-circle-fill"></i>Academic Support</li><li><i class="bi bi-check-circle-fill"></i>Subject Support</li><li><i class="bi bi-check-circle-fill"></i>Regular Practice</li><li><i class="bi bi-check-circle-fill"></i>Exam Preparation</li></ul>
+  <button class="btn-ghost w-100" data-admit data-class="${c} শ্রেণি">ভর্তি সম্পর্কে জানতে যোগাযোগ করুন</button></div></div>`).join("");
+$("#subjectGrid").innerHTML = subjects.map(s => `<div class="col-6 col-md-3 reveal"><div class="card-s subject"><div class="ico"><i class="bi ${s[0]}"></i></div><h3>${s[1]}</h3></div></div>`).join("");
+$("#teamGrid").innerHTML = team.map(t => `<div class="col-md-6 col-lg-4 reveal"><div class="card-s team-card"><div class="team-top"><span class="role">${t[2]}</span></div>
+  <!-- Replace this avatar div with <img class="avatar" src="..." alt="${t[1]}"> when real photo is available -->
+  <div class="avatar" aria-hidden="true">${t[0]}</div><div class="team-body"><h3>${t[1]}</h3><p class="meta">${t[3]}</p><p class="meta">${t[4]}</p><span class="deg">${t[5]}</span></div></div></div>`).join("");
+$("#featGrid").innerHTML = feats.map(f => `<div class="col-md-6 col-lg-4 reveal"><div class="card-s"><div class="ico" style="font-size:1.6rem">${f[0]}</div><h3 class="en">${f[1]}</h3><p>${f[2]}</p></div></div>`).join("");
+$("#testiGrid").innerHTML = testimonials.map(t => `<div class="col-md-4 reveal"><div class="card-s">${t.demo?'<span class="demo-tag">Demo testimonial — replace with an actual student/guardian review.</span>':''}<p class="quote">“${t.text}”</p><div class="who"><span class="dot"><i class="bi bi-person"></i></span><div><strong>${t.name}</strong><small>${t.role}</small></div></div></div></div>`).join("");
+$("#faqList").innerHTML = faqs.map((f,i) => `<div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button ${i?'collapsed':''}" type="button" data-bs-toggle="collapse" data-bs-target="#fq${i}" aria-expanded="${i?'false':'true'}" aria-controls="fq${i}">${f[0]}</button></h3><div id="fq${i}" class="accordion-collapse collapse ${i?'':'show'}" data-bs-parent="#faqList"><div class="accordion-body">${f[1]}</div></div></div>`).join("");
+$("#year").textContent = new Date().getFullYear();
+
+/* ---- Toast ---- */
+function toast(msg){
+  const el = document.createElement("div");
+  el.className = "snac-toast"; el.textContent = msg;
+  $("#toasts").appendChild(el);
+  setTimeout(() => el.remove(), 4200);
+}
+
+/* ---- Navbar: scroll state, active link, back-to-top ---- */
+const nav = $("#nav"), toTop = $("#toTop");
+const links = $$(".nav-link");
+const sections = links.map(l => $(l.getAttribute("href"))).filter(Boolean);
+function onScroll(){
+  const y = window.scrollY;
+  nav.classList.toggle("scrolled", y > 30);
+  toTop.classList.toggle("show", y > 500);
+  let cur = sections[0];
+  sections.forEach(s => { if (s.getBoundingClientRect().top <= 140) cur = s; });
+  links.forEach(l => l.classList.toggle("active", l.getAttribute("href") === "#" + cur.id));
+}
+window.addEventListener("scroll", onScroll, {passive:true}); onScroll();
+toTop.addEventListener("click", () => window.scrollTo({top:0, behavior:"smooth"}));
+
+/* ---- Smooth scrolling + close mobile menu ---- */
+$$('a[href^="#"]').forEach(a => a.addEventListener("click", e => {
+  const t = $(a.getAttribute("href"));
+  if (!t) return;
+  e.preventDefault();
+  t.scrollIntoView({behavior:"smooth"});
+  const menu = $("#menu");
+  if (menu.classList.contains("show")) bootstrap.Collapse.getOrCreateInstance(menu).hide();
+}));
+
+/* ---- Scroll reveal ---- */
+const io = "IntersectionObserver" in window ? new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting){ e.target.classList.add("show"); io.unobserve(e.target); }
+}), {threshold:.12}) : null;
+$$(".reveal").forEach(el => io ? io.observe(el) : el.classList.add("show"));
+
+/* ---- Admission modal ---- */
+const admitModal = new bootstrap.Modal($("#admitModal"));
+const okModal = new bootstrap.Modal($("#okModal"));
+const form = $("#admitForm");
+$$("[data-admit]").forEach(b => b.addEventListener("click", () => {
+  if (b.dataset.class) $("#fClass").value = b.dataset.class;
+  const menu = $("#menu");
+  if (menu.classList.contains("show")) bootstrap.Collapse.getOrCreateInstance(menu).hide();
+  admitModal.show();
+}));
+form.addEventListener("submit", e => {
+  e.preventDefault();
+  const phone = $("#fPhone");
+  phone.setCustomValidity(/^01[3-9]\d{8}$/.test(phone.value.trim()) ? "" : "invalid");
+  form.classList.add("was-validated");
+  if (!form.checkValidity()){ toast("অনুগ্রহ করে সব প্রয়োজনীয় তথ্য সঠিকভাবে দিন।"); return; }
+  /* TODO: connect to WhatsApp / Google Sheets / PHP / Laravel / Firebase here */
+  admitModal.hide();
+  form.reset(); form.classList.remove("was-validated");
+  setTimeout(() => okModal.show(), 350);
+});
+
+/* ---- Contact buttons ---- */
+function contact(type){
+  const map = {
+    phone: CONTACT_PHONE && "tel:+" + CONTACT_PHONE,
+    whatsapp: WHATSAPP_NUMBER && "https://wa.me/" + WHATSAPP_NUMBER,
+    messenger: MESSENGER_URL, facebook: FACEBOOK_URL
+  };
+  if (map[type]) window.open(map[type], type === "phone" ? "_self" : "_blank", "noopener");
+  else { toast("যোগাযোগের তথ্য শীঘ্রই যুক্ত করা হবে। এখন ভর্তি ফর্মটি ব্যবহার করুন।"); }
+}
+$$("[data-contact]").forEach(b => b.addEventListener("click", () => contact(b.dataset.contact)));
+$("#dirBtn").addEventListener("click", () => MAP_URL ? window.open(MAP_URL, "_blank", "noopener") : toast("ম্যাপ লিংক শীঘ্রই যুক্ত করা হবে। ঠিকানা: ঘোপ, বেলতলা, বৌবাজার রোড, যশোর-৭৪০০"));
+</script>
+</body>
+</html>
